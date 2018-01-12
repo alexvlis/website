@@ -7,11 +7,12 @@ html, body {
 }
 
 .footer {
-  position: absolute;
-  top: 140em;
+  /*position: absolute;*/
+  top: 110%;
   background-attachment: scroll;
   bottom: 0;
   width:100%;
+  margin-top: 6em;
 }
 
 .intro {
@@ -49,39 +50,49 @@ hr {
 .pub-wrap {
   position:relative;
   margin-left: 18%;
+  /*margin-right: -18em;*/
 }
 
 .title {
-  position: absolute;
+  /*position: absolute;*/
   font-size: 1.2em;
-  margin-left: 0em;
-  margin-top: 0.5em;
+  margin-left: 18%;
+  margin-top: 1.5em;
 }
 
 .summary {
-  position:absolute;
-  margin-top: 3em;
-  margin-left:0em;
-  margin-right: 18%;
+  /*position:absolute;*/
+  margin-left: 18%;
+  margin-top: 1em;
+  /*margin-left:0em;*/
+  margin-right: 18em;
+  display: block;
+  text-size-adjust: none;
+  /*text-overflow: clip;*/
+  /*min-width: 30em;*/
+  /*overflow:hidden;*/
 }
 
 .date {
-  position:absolute;
-  margin-top: 16em;
+  margin-left: 18%;
+  /*position:absolute;*/
+  margin-top: 1em;
   font-size: 0.7em;
 }
 
 .company {
+  margin-left: 16.5%;
   position: absolute;
-  margin-top: 11em;
+  margin-top: 0.5em;
   height: 6em;
   width: 8em;
-  margin-left: -1.8em;
+  /*margin-left: -1.8em;*/
   z-index: -1;
 }
 
 .link {
-  position: absolute;
-  margin-top: 10.5em;
+  margin-left: 18%;
+  /*position: absolute;*/
+  margin-top: 1em;
   font-size: 0.9em;
 }
