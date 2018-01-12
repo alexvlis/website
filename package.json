@@ -1,0 +1,27 @@
+{
+  "name": "AlexVlissidis",
+  "main": "app.js",
+  "description": "Personal Website",
+  "version": "0.1.1",
+  "private": false,
+  "engines": {
+    "node": "6.*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/get-started-node"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.x",
+    "cfenv": "^1.0.x",
+    "cloudant": "^1.7.x",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "particles.js": "^2.0.0"
+  },
+  "author": "IBM Corp",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,47 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  color: #404040;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  top: 120em;
+  background-attachment: scroll;
+  bottom: 0;
+  width:100%;
+}
+
+.intro {
+  position:absolute;
+  left:18%;
+  top: 2em;
+  font-size: 5em;
+}
+
+.navbar {
+  background-color: #3D3D3D;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: #E8E8E8;
+}
+
+.nav.navbar-nav li a {
+  color: #E8E8E8;
+}
+
+.nav-brand a {
+  color: #E8E8E8;
+}
+
+hr {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 18%;
+    margin-right: 18%;
+    border-style: inset;
+    border-width: 1px;
+}

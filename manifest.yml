@@ -1,0 +1,8 @@
+---
+applications:
+ - name: Alex Vlissidis
+   routes:
+    - route: alexvlissidis.mybluemix.net
+    - route: alexvlissidis.com
+   memory: 256M
+   instances: 1

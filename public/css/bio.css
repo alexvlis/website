@@ -1,0 +1,116 @@
+h1, h2, h3, h4, h5, h6{
+  line-height: 40px;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  color: #404040;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #3D3D3D;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: #E8E8E8;
+}
+
+.nav.navbar-nav li a {
+  color: #E8E8E8;
+}
+
+.nav-brand a {
+  color: #E8E8E8;
+}
+
+.footer {
+  position: absolute;
+  top: 120em;
+  background-attachment: scroll;
+  bottom: 0;
+  width:100%;
+}
+
+.entry {
+  position: relative;
+  /*left: 50%;*/
+  background:#ffa;
+  width:10em;
+  height:10em;
+  padding:0em 0em;
+  border-radius:50em;
+  /*margin: -10% 0 0 -25%;*/
+}
+
+.biointro {
+  position:absolute;
+  left:18%;
+  top: 2em;
+  font-size: 5em;
+}
+
+hr {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 18%;
+    margin-right: 18%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.section {
+  font-size: 2em;
+  margin-left: 18%;
+}
+
+.section-wrap {
+  position:relative;
+  margin-left: 18%;
+}
+
+.university {
+  position:absolute;
+  font-size: 1.2em;
+  margin-left: 8em;
+  margin-top: 1em;
+}
+
+.logo {
+  position: absolute;
+  width:6em;
+  height:6em;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.degree {
+  position: absolute;
+  font-size: 1em;
+  margin-left: 9.5em;
+  margin-top: 3em;
+}
+
+.date {
+  position: absolute;
+  font-size: 0.8em;
+  margin-left: 12em;
+  margin-top: 7em;
+}
+
+.chart rect {
+    position:relative;
+    fill: #0093E1;
+    left: 20%;
+    margin-top: -1.5em;
+  }
+
+  .chart text {
+    font-family: 'Montserrat', sans-serif;
+    fill: white;
+    font: 10px sans-serif;
+    text-anchor: end;
+    left: 20.5em;
+  }
