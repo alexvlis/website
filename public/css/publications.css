@@ -8,11 +8,11 @@ html, body {
 
 .footer {
   /*position: absolute;*/
-  top: 110%;
+  /*top: 115%;*/
   background-attachment: scroll;
   bottom: 0;
   width:100%;
-  margin-top: 6em;
+  margin-top: 11em;
 }
 
 .intro {
