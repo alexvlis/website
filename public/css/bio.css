@@ -201,7 +201,7 @@ html, body {
 }
 
 .grad {
-  max-width: 15em !important;
+  max-width: 15 em !important;
   position:absolute;
   margin-left: 75%;
   margin-top: 14em;
