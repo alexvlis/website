@@ -2,14 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>Alex Vlissidis</title>
-  <meta name="keywords" content="Student, Data Science, Artifical Intelligence, Machine Learning, resume">
+  <meta name="keywords" content="Software Engineer, Data Science, Artifical Intelligence, Machine Learning, resume">
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     //get scroll position
     var topWindow = $(window).scrollTop();
     //multiply by 1.5 so the arrow will become transparent half-way up the page
-    var topWindow = topWindow * 1.5;
+    var topWindow = topWindow * 6;
 
     //get height of window
     var windowHeight = $(window).height();
@@ -45,7 +46,7 @@
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top
-          }, 1000);
+          }, 10000);
           return false;
         }
       }
@@ -53,70 +54,60 @@
   });
   </script>
 
-  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-
-        <!-- <a class="navbar-brand visible-xs" href="/">Alex Vlissidis</a> -->
-
-        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="border: #0b1f2c; width: 100%;">
+    <div class="container" style="border: #0b1f2c;">
+      <div class="navbar-header" style="background-color: #0b1f2c; border: #0b1f2c;">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="../images/icon-menu.svg" style="width: 2em; height: 2em;"/>
         </button>
-
       </div>
-
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/bio">Bio</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/publications">Publications</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/bio">Bio</a></li>
+          <li class="nav-item"><a href="/projects">Projects</a></li>
+          <li class="nav-item"><a href="/publications">Publications</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/"><i class="fa fa-linkedin"></i></a></li>
-          <li class="navbar-icon"><a href="https://github.com/alexvlis/"><i class="fa fa-github"></i></a></li>
-          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064"><i class="fa fa-stack-overflow"></i></a></li>
-          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/"><i class="fa fa-instagram"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="navbar-icon"><a href="https://github.com/alexvlis/" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/" target="_blank"><i class="fa fa-instagram"></i></a></li>
           <li class="navbar-icon"><a href="mailto:alex.vlissidis@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
       </div>
-
     </div>
   </nav>
-
-  <!-- particles.js container -->
-  <div id="particles-js"></div>
 
   <!-- scripts -->
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
 
-  <!-- <main> -->
+  <main>
     <div class="intro">
+      <div id="particles-js"></div>
       <h1 align="center" style="line-height:1.5; margin-left:0%;  margin-right:0%">Alex Vlissidis</h1>
       <h2 align="center">Data Scientist &middot; Software Engineer</h2>
     </div>
-  <!-- </main> -->
 
-  <a class="arrow-wrap" href=#about>
-    <span class="arrow"></span>
-  </a>
-
-  <img src="images/profile.jpg" class="prof">
-    <div class="about" id="about">
-      <h1 align="center"><font size=6>About Me</font></h1>
-      Hi, I am currently pursuing a Master's degree in Data Science & Systems from
-      the EECS department at UC Berkeley. I aspire to use this degree to launch my
-      career as a software engineer in the industry and work on data related
-      projects with machine learning applications.
+  <div class="about-wrap">
+    <div class="proftag">
+      <img src="images/profile.jpg" class="prof">
     </div>
-
-  <div class="footer">
-    <h1 align="center"><font size=1>&copy; Alexandros Vlissidis - All rights reserved</font></h1>
+    <div class="about" id="about">
+      <h1 align="center" style="color: #08232c; line-height: 2.5; font-size: 200%;">About Me</h1>
+      Currently working as a Software Engineer @ <a href="https://www.datavisor.com" style="color:#0065ff;">DataVisor</a>, in Mountain View, CA, working on the UML
+      (Unsupervised Machine Learning) engine for fraud detection. Previously, I graduated with a Master's degree in Data Science & Systems from the EECS department at UC Berkeley. I aspire to use this degree throughout my career as a software engineer in the industry and work on data related projects with machine learning applications.
+    </div>
   </div>
+
+  <div class="footer-wrap">
+    <div class="footer">
+      &copy; Alex Vlissidis - All rights reserved
+    </div>
+  </div>
+
+</main>
 
 </body>

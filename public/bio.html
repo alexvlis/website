@@ -5,10 +5,9 @@
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bio.css">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+  <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <!-- <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
       // google.charts.setOnResize(drawChart);
@@ -31,97 +30,379 @@
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
       }
-    </script>
+    </script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-
-        <!-- <a class="navbar-brand visible-xs" href="/">Alex Vlissidis</a> -->
-
-        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+   <nav class="navbar navbar-inverse navbar-fixed-top" style="border: #0b1f2c; width: 100%;">
+    <div class="container" style="border: #0b1f2c;">
+      <div class="navbar-header" style="background-color: #0b1f2c; border: #0b1f2c;">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="../images/icon-menu.svg" style="width: 2em; height: 2em;"/>
         </button>
-
       </div>
-
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/bio">Bio</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/publications">Publications</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/bio">Bio</a></li>
+          <li class="nav-item"><a href="/projects">Projects</a></li>
+          <li class="nav-item"><a href="/publications">Publications</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/"><i class="fa fa-linkedin"></i></a></li>
-          <li class="navbar-icon"><a href="https://github.com/alexvlis/"><i class="fa fa-github"></i></a></li>
-          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064"><i class="fa fa-stack-overflow"></i></a></li>
-          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/"><i class="fa fa-instagram"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="navbar-icon"><a href="https://github.com/alexvlis/" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/" target="_blank"><i class="fa fa-instagram"></i></a></li>
           <li class="navbar-icon"><a href="mailto:alex.vlissidis@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-  <div class="biointro">Bio</div>
-
-  <hr style="margin-top: 18em;">
-
-  <div class="section" style="margin-top: 2em;">Education</div>
-
-  <div class="section-wrap" style="margin-top: 0.5em;">
-    <div class="university"><b>University of California, Berkeley</b></div>
-    <div class="degree">Master's in Data Science & Systems | EECS, GPA: 3.8</div>
-    <img src="images/berkeley.png" class="logo">
-    <div class="date">August 2017 - Present</div>
+  <div class="bio-wrap">
+    <div class="biointro">Bio</div>
   </div>
 
-  <div class="section-wrap" style="margin-top: 10em;">
-    <div class="university"><b>University of Bath</b></div>
-    <div class="degree">MEng in Electrical & Electronic Engineering, First Class Honors</div>
-    <img src="images/bath.jpg" class="logo">
-    <div class="date">October 2012 - July 2017</div>
+  <!-- <div class="gradtag"> -->
+  <img src="images/college-graduation.png" class="grad">
+  <!-- </div> -->
+
+  <div class="section-wrap-wrap" style="margin-top: 18em; background-color: #fff">
+    <div class="section" style="padding-top: 2em;">Education</div>
+    <div class="section-wrap" style="padding-top: 1.5em;">
+      <div class="university">University of California, Berkeley</div>
+      <div class="degree">Master's in Data Science & Systems | EECS, GPA: 3.7</div>
+      <div class="logo">
+        <img src="images/berkeley.png">
+      </div>
+      <div class="date">August 2017 - June 2018</div>
+    </div>
+
+    <div class="section-wrap" style="margin-top: 3em;">
+      <div class="university">University of Bath</div>
+      <div class="degree">MEng in Electrical & Electronic Engineering, First Class Honors</div>
+      <div class="logo">
+        <img src="images/bath.jpg">
+      </div>
+      <div class="date">October 2012 - July 2017</div>
+    </div>
+
+    <div class="section-wrap" style="margin-top: 3em;">
+      <div class="university">The Moraitis School</div>
+      <div class="degree">International Baccalaureate</div>
+      <div class="logo">
+        <img src="images/moraitis.jpeg">
+      </div>
+      <div class="date">September 2010 - July 2012</div>
+    </div>
   </div>
 
-  <div class="section-wrap" style="margin-top: 19.5em;">
-    <div class="university"><b>The Moraitis School</b></div>
-    <div class="degree">International Baccalaureate</div>
-    <img src="images/moraitis.jpeg" class="logo">
-    <div class="date">September 2010 - July 2012</div>
-  </div>
+  <img src="images/coding.png" class="coding">
 
-  <hr style="margin-top: 32em;">
+  <div class="section-wrap-wrap" style="margin-top: -10em;">
+    <div class="section" style="padding-top: 2em;">Experience</div>
+    <div class="section-wrap" style="padding-top: 1.5em;">
+      <div class="university">DataVisor</div>
+      <div class="degree">Software Engineer</div>
+      <div class="logo">
+        <img src="images/datavisor.png" style="width: 5em;">
+      </div>
+      <div class="date">July 2018 - Present</div>
+    </div>
 
-  <div class="section" style="margin-top: 2em;">Professional Experience</div>
+    <div class="section-wrap" style="padding-top: 3em;">
+      <div class="university">Berkeley Institute for Data Science</div>
+      <div class="degree">Graduate Researcher</div>
+      <div class="logo">
+        <img src="images/bids.png">
+      </div>
+      <div class="date">Aug 2017 - June 2018</div>
+    </div>
 
-  <div class="section-wrap" style="margin-top: 0.5em;">
-    <div class="university"><b>IBM</b></div>
-    <div class="degree">Extreme Blue Technical Intern</div>
-    <img src="images/ibm.jpg" class="logo" style="height:7.5em; width:10em; margin-left: -1em; margin-top: -0.3em;">
-    <div class="date">June 2016 - September 2016</div>
-  </div>
+    <div class="section-wrap" style="margin-top: 3em;">
+      <div class="university">IBM</div>
+      <div class="degree">Extreme Blue Technical Intern</div>
+      <div class="logo" style="padding-top: 2em;">
+        <img src="images/ibm.png">
+      </div>
+      <div class="date">June 2016 - September 2016</div>
+    </div>
 
-  <div class="section-wrap" style="margin-top: 10em;">
-    <div class="university"><b>McLaren Applied Technologies</b></div>
-    <div class="degree">Software Engineer</div>
-    <img src="images/mclaren.png" class="logo" style="height:8em; width:10em; margin-left: -1em; margin-top: -0.5em;">
-    <div class="date">August 2014 - August 2015</div>
-  </div>
+    <div class="section-wrap" style="margin-top: 3em;">
+      <div class="university">McLaren Applied Technologies</div>
+      <div class="degree">Software Engineer</div>
+      <div class="logo" style="padding-top: 1em;">
+        <img src="images/mclaren.png">
+      </div>
+      <div class="date">August 2014 - August 2015</div>
+    </div>
+   </div>
 
-  <hr style="margin-top: 22em;">
+  <div class="section" style="margin-top: 1em; z-index:0">Technical Skills</div>
 
-  <div class="section" style="margin-top: 2em; z-index:0">Skills</div>
+  <!-- <div id="donutchart" style="position:relative;width:60%;height:50%;margin-left:28%;margin-top:-5em;z-index:-1">
+  </div> -->
 
-  <div id="donutchart" style="position:relative;width:60%;height:50%;margin-left:28%;margin-top:-5em;z-index:-1"></div>
+  <svg width="100%" height="700" font-size="90%" text-anchor="middle" style="margin-left: 0%;">
+  </svg>
 
-  <div class="footer">
-    <h1 align="center"><font size=1>&copy; Alexandros Vlissidis - All rights reserved</font></h1>
+  <script src="js/d3.min.js"></script>
+  <script src="js/d3-legend.min.js"></script>
+  <script>
+    // Based loosely from this D3 bubble graph https://bl.ocks.org/mbostock/4063269
+    // And this Forced directed diagram https://bl.ocks.org/mbostock/4062045
+    let data = [{
+      cat: 'Language', name: 'Java', value: 60,
+      icon: 'img/java.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'Scikit-Learn', value: 60,
+      icon: 'img/scikit-learn.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'Tensorflow', value: 40,
+      icon: 'img/tensorflow.png',
+      desc: ``
+    }, {
+      cat: 'Language', name: 'C++', value: 35,
+      icon: 'img/c++.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'NumPy', value: 40,
+      icon: 'img/numpy.png',
+      desc: ``
+    }, {
+      cat: 'Language', name: 'Node', value: 15,
+      icon: 'img/node.png',
+      desc: ``
+    }, {
+      cat: 'Language', name: 'MATLAB', value: 25,
+      icon: 'img/matlab.png',
+      desc: ``
+    }, {
+      cat: 'Language', name: 'Python', value: 60,
+      icon: 'img/python.png',
+      desc: ``
+    }, {
+      cat: 'OS', name: 'Ubuntu', value: 20,
+      icon: 'img/ubuntu.png',
+      desc: ``
+    }, {
+      cat: 'OS', name: 'Debian', value: 10,
+      icon: 'img/debian.png',
+      desc: ``
+    }, {
+      cat: 'Editor', name: 'Vim', value: 15,
+      icon: 'img/vim.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'Keras', value: 20,
+      icon: 'img/keras.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'Pytorch', value: 20,
+      icon: 'img/pytorch.png',
+      desc: ``
+    }, {
+      cat: 'Version Control', name: 'Git', value: 20,
+      icon: 'img/git.png',
+      desc: ``
+    }, {
+      cat: 'Version Control', name: 'GitLab', value: 10,
+      icon: 'img/gitlab.png',
+      desc: ``
+    }, {
+      cat: 'Databases', name: 'ElastiSearch', value: 20,
+      icon: 'img/elastic.svg',
+      desc: ``
+    }, {
+      cat: 'Databases', name: 'Cloudant', value: 20,
+      icon: 'img/cloudant.png',
+      desc: ``
+    }, {
+      cat: 'Databases', name: 'SQL', value: 30,
+      icon: 'img/postgress.png',
+      desc: ``
+    }, {
+      cat: 'ML Framework', name: 'Apache Spark', value: 20,
+      icon: 'img/spark.png',
+      desc: ``
+    }]
+  </script>
+
+  <script>
+    let svg = d3.select('svg');
+    let width = document.body.clientWidth; // get width in pixels
+    let height = +svg.attr('height');
+    let centerX = width * 0.5;
+    let centerY = height * 0.5;
+    let strength = 0.05;
+    let focusedNode;
+    let format = d3.format(',d');
+
+    let categories = ['Language', 'ML Framework', 'Language', 'OS', 'Editor', 'Version Control', 'Databases'];
+    let scaleColor = d3.scaleOrdinal().domain(categories).range(categories.map((val, i) =>
+        d3.interpolateCool(i / (categories.length - 1))
+    ));
+
+    // use pack to calculate radius of the circle
+    let pack = d3.pack()
+      .size([width , height ])
+      .padding(1.5);
+    let forceCollide = d3.forceCollide(d => d.r + 1);
+    // use the force
+    let simulation = d3.forceSimulation()
+      // .force('link', d3.forceLink().id(d => d.id))
+      .force('charge', d3.forceManyBody())
+      .force('collide', forceCollide)
+      // .force('center', d3.forceCenter(centerX, centerY))
+      .force('x', d3.forceX(centerX ).strength(strength))
+      .force('y', d3.forceY(centerY ).strength(strength));
+    // reduce number of circles on mobile screen due to slow computation
+    if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+      data = data.filter(el => {
+        return el.value >= 25;
+      });
+    }
+    let root = d3.hierarchy({ children: data })
+      .sum(d => d.value);
+    // we use pack() to automatically calculate radius conveniently only
+    // and get only the leaves
+    let nodes = pack(root).leaves().map(node => {
+      console.log('node:', node.x, (node.x - centerX) * 2);
+      const data = node.data;
+      return {
+        x: centerX + (node.x - centerX) * 3, // magnify start position to have transition to center movement
+        y: centerY + (node.y - centerY) * 3,
+        r: 0, // for tweening
+        radius: node.r, //original radius
+        id: data.cat + '.' + (data.name.replace(/\s/g, '-')),
+        cat: data.cat,
+        name: data.name,
+        value: data.value,
+        icon: data.icon,
+        desc: data.desc,
+      }
+    });
+    simulation.nodes(nodes).on('tick', ticked);
+    svg.style('background-color', '#fff');
+    let node = svg.selectAll('.node')
+      .data(nodes)
+      .enter().append('g')
+      .attr('class', 'node')
+      .call(d3.drag()
+        .on('start', (d) => {
+          if (!d3.event.active) simulation.alphaTarget(0.2).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on('drag', (d) => {
+          d.fx = d3.event.x;
+          d.fy = d3.event.y;
+        })
+        .on('end', (d) => {
+          if (!d3.event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }));
+    node.append('circle')
+      .attr('id', d => d.id)
+      .attr('r', 0)
+      .style('fill', d => scaleColor(d.cat))
+      .transition().duration(2000).ease(d3.easeElasticOut)
+        .tween('circleIn', (d) => {
+          let i = d3.interpolateNumber(0, d.radius);
+          return (t) => {
+            d.r = i(t);
+            simulation.force('collide', forceCollide);
+          }
+        })
+    node.append('clipPath')
+      .attr('id', d => `clip-${d.id}`)
+      .append('use')
+      .attr('xlink:href', d => `#${d.id}`);
+    // display text as circle icon
+    node.filter(d => !String(d.icon).includes('img/'))
+      .append('text')
+      .classed('node-icon', true)
+      .attr('clip-path', d => `url(#clip-${d.id})`)
+      .selectAll('tspan')
+      .data(d => d.icon.split(';'))
+      .enter()
+        .append('tspan')
+        .attr('x', 0)
+        .attr('y', (d, i, nodes) => (13 + (i - nodes.length / 2 - 0.5) * 10))
+        .text(name => name);
+    // display image as circle icon
+    node.filter(d => String(d.icon).includes('img/'))
+      .append('image')
+      .classed('node-icon', true)
+      .attr('clip-path', d => `url(#clip-${d.id})`)
+      .attr('xlink:href', d => d.icon)
+      .attr('x', d => - d.radius * 0.7)
+      .attr('y', d => - d.radius * 0.7)
+      .attr('height', d => d.radius * 2 * 0.7)
+      .attr('width', d => d.radius * 2 * 0.7)
+    node.append('title')
+      .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+    let legendOrdinal = d3.legendColor()
+      .scale(scaleColor)
+      .shape('circle');
+    let legend = svg.append('g')
+      .classed('legend-color', true)
+      .attr('text-anchor', 'start')
+      .attr('transform','translate(80, 30)')
+      .style('font-size','90%')
+      .call(legendOrdinal);
+    let sizeScale = d3.scaleOrdinal()
+        .domain(['less use', 'more use'])
+        .range([5, 10] );
+    let legendSize = d3.legendSize()
+      .scale(sizeScale)
+      .shape('circle')
+      .shapePadding(10)
+      .labelAlign('end');
+    let legend2 = svg.append('g')
+      .classed('legend-size', true)
+      .attr('text-anchor', 'start')
+      .attr('transform', 'translate(250, 25)')
+      .style('font-size', '90%')
+      .call(legendSize);
+
+    let infoBox = node.append('foreignObject')
+      .classed('circle-overlay hidden', true)
+      .attr('x', -350 * 0.5 * 0.8)
+      .attr('y', -350 * 0.5 * 0.8)
+      .attr('height', 350 * 0.8)
+      .attr('width', 350 * 0.8)
+        .append('xhtml:div')
+        .classed('circle-overlay__inner', true);
+    infoBox.append('h2')
+      .classed('circle-overlay__title', true)
+      .text(d => d.name);
+    infoBox.append('p')
+      .classed('circle-overlay__body', true)
+      .html(d => d.desc);
+
+    d3.select(window).on("resize", function() {
+      var targetWidth = svg.getBoundingClientRect().width;
+      svg.attr("width", targetWidth);
+      svg.attr("height", targetWidth / aspect);
+    });
+
+    function ticked() {
+      node
+        .attr('transform', d => `translate(${d.x},${d.y})`)
+        .select('circle')
+          .attr('r', d => d.r);
+    }
+  </script>
+
+
+  <div class="footer-wrap">
+    <div class="footer">&copy; Alex Vlissidis - All rights reserved</div>
   </div>
 </body>

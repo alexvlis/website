@@ -5,73 +5,69 @@
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/publications.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-
-        <a class="navbar-brand visible-xs" href="#">Alex Vlissidis</a>
-
-        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="border: #0b1f2c; width: 100%;">
+    <div class="container" style="border: #0b1f2c;">
+      <div class="navbar-header" style="background-color: #0b1f2c; border: #0b1f2c;">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="../images/icon-menu.svg" style="width: 2em; height: 2em;"/>
         </button>
-
       </div>
-
-      <div class="collapse navbar-collapse" style="color: #f2f2f2;">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/bio">Bio</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/publications">Publications</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/bio">Bio</a></li>
+          <li class="nav-item"><a href="/projects">Projects</a></li>
+          <li class="nav-item"><a href="/publications">Publications</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/"><i class="fa fa-linkedin"></i></a></li>
-          <li class="navbar-icon"><a href="https://github.com/alexvlis/"><i class="fa fa-github"></i></a></li>
-          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064"><i class="fa fa-stack-overflow"></i></a></li>
-          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/"><i class="fa fa-instagram"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="navbar-icon"><a href="https://github.com/alexvlis/" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/" target="_blank"><i class="fa fa-instagram"></i></a></li>
           <li class="navbar-icon"><a href="mailto:alex.vlissidis@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-  <div class="intro">Publications</div>
+  <div class="intro-wrap">
+    <div class="intro">Publications</div>
+  </div>
 
-  <hr style="margin-top: 18em;">
+  <!-- <hr style="margin-top: 18em;"> -->
 
-  <p class="title"><b>Classifying interests by comparing individual browser history to site popularity</b></p>
+  <p class="title" style="margin-top: 18em;">Classifying interests by comparing individual browser history to site popularity</p>
   <p class="summary">Many companies collect large amounts of data on their customers' mobile browsing history and monetizing this is a very important revenue stream. The problem is how they can use this data to make inferences about their customers and build customer profiles. It is difficult to know which websites are more important for building a customer profile and which websites and browser searches are more indicative of a person's interests. This information is inherently valuable and we want to help others to be able to extract this information from their customer data and better utilize it.</p>
   <p class="date">Oct 10, 2017</p>
-  <img src="images/ibm.jpg" class="company">
-  <a class="link" href="http://priorart.ip.com/IPCOM/000251088">http://priorart.ip.com/IPCOM/000251088</a>
+  <img src="images/ibm.png" class="company">
+  <a class="link" href="http://priorart.ip.com/IPCOM/000251088" style="color: #0065ff;">http://priorart.ip.com/IPCOM/000251088</a>
 
   <hr style="margin-top: 6em;">
 
-  <p class="title"><b>Using browser history to test engagement to an advert</b></p>
+  <p class="title">Using browser history to test engagement to an advert</p>
   <p class="summary">There is a major problem with modern advertising when using billboards and other methods of advertising because it is extremely hard to test engagement with the viewing audience. This means that although its purpose is normally just to bring awareness to a brand or product, the advertiser will have no idea on how successful their advertising campaign has been. This is because there is a large disconnect between the display and the audience in terms of how they interact, which makes it a lot harder to build in a feedback loop. By being able to include a feedback loop it will be possible to provide valuable information on how audience members are reacting to adverts and therefore track the success of different advertising campaigns.</p>
   <p class="date">Oct 4, 2016</p>
-  <img src="images/ibm.jpg" class="company">
-  <a class="link" href="https://priorart.ip.com/IPCOM/000251041">https://priorart.ip.com/IPCOM/000251041</a>
+  <img src="images/ibm.png" class="company">
+  <a class="link" href="https://priorart.ip.com/IPCOM/000251041" style="color: #0065ff;">https://priorart.ip.com/IPCOM/000251041</a>
 
   <hr style="margin-top: 6em;">
 
-  <p class="title"><b>Monitoring the spatial movement of devices to detect disasters</b></p>
+  <p class="title">Monitoring the spatial movement of devices to detect disasters</p>
   <p class="summary">In unpredictable disasters, the speed of detection for the emergency services and other organizations is vital. In some cases the response time is limited to individuals reporting the disaster location, which may not happen until a while after the event. This idea helps to speed up the identification of disasters by highlighting the rapid or unusual movement of people away from locations.</p>
   <p class="date">Sep 9, 2016</p>
-  <img src="images/ibm.jpg" class="company">
-  <a class="link" href="http://priorart.ip.com/IPCOM/000247467">http://priorart.ip.com/IPCOM/000247467</a>
+  <img src="images/ibm.png" class="company">
+  <a class="link" href="http://priorart.ip.com/IPCOM/000247467" style="color: #0065ff;">http://priorart.ip.com/IPCOM/000247467</a>
 
-  <div class="footer">
-    <h1 align="center"><font size=1>&copy; Alexandros Vlissidis - All rights reserved</font></h1>
+  <div class="footer-wrap">
+    <div class="footer">
+      &copy; Alex Vlissidis - All rights reserved
+    </div>
   </div>
 </body>

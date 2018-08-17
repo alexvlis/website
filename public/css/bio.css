@@ -2,115 +2,215 @@ h1, h2, h3, h4, h5, h6{
   line-height: 40px;
 }
 
+@font-face{font-family:sinkinsans300;src:url(../fonts/sinkinsans-300.eot);src:url(../fonts/sinkinsans-300.eot?#iefix) format("embedded-opentype"),url(../fonts/sinkinsans-300.woff) format("woff"),url(../fonts/sinkinsans-300.ttf) format("truetype"),url(../fonts/sinkinsans-300.svg#sinkin_sans300_light) format("svg");font-weight:400;font-style:normal}
+
 html, body {
-  font-family: 'Montserrat', sans-serif;
-  color: #404040;
+  font-family: sinkinsans300;
+  color: #666;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 .navbar {
-  background-color: #3D3D3D;
+  background: #fff;
+  width: 100%;
+}
+
+.nav-item a:hover {
+  color: #0065ff !important;
 }
 
 .nav.navbar-nav.navbar-right li a {
-  color: #E8E8E8;
+  color: #0b1f2c;
+  margin-right: 0%;
 }
 
 .nav.navbar-nav li a {
-  color: #E8E8E8;
+  color: #0b1f2c;
+}
+
+.nav.navbar-nav.navbar-right li {
+  display: inline-block;
+  text-align: left;
 }
 
 .nav-brand a {
-  color: #E8E8E8;
+  color: #0b1f2c;
+}
+
+.navbar-toggle {
+  padding-left: 1%;
+  position: relative;
+  background-color: #0b1f2c;
+  color: #fff;
+  border: #0b1f2c;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.navbar-toggle:hover {
+  background-color: #0b1f2c !important;
+  color: red;
+}
+
+.navbar-toggle:focus {
+  background-color: #0b1f2c !important;
+  color: red;
+}
+
+.footer-wrap {
+  position: relative
+  width: 100%;
+  top: 130em;
+  height: 4em;
+  background-color: #0b1f2c;
 }
 
 .footer {
   position: absolute;
-  top: 120em;
-  background-attachment: scroll;
-  bottom: 0;
   width:100%;
+  color: #fff;
+  text-align: center;
+  font-size: 70%;
+  padding-top: 2em;
 }
 
 .entry {
   position: relative;
-  /*left: 50%;*/
   background:#ffa;
   width:10em;
   height:10em;
   padding:0em 0em;
-  border-radius:50em;
-  /*margin: -10% 0 0 -25%;*/
+}
+
+.bio-wrap {
+  position: absolute;
+  top: 3em;
+  height: 15em;
+  width: 100%;
+  background-color: #0b1f2c;
+  color: #fff;
 }
 
 .biointro {
-  position:absolute;
-  left:18%;
-  top: 2em;
+  text-align: center;
   font-size: 5em;
-}
-
-hr {
-    display: block;
-    margin-bottom: 0.5em;
-    margin-left: 18%;
-    margin-right: 18%;
-    border-style: inset;
-    border-width: 1px;
+  background-color: #0b1f2c;
+  color: #fff;
+  padding-top: 1em;
+  width: 100%
 }
 
 .section {
-  font-size: 2em;
-  margin-left: 18%;
+  position: relative;
+  font-size: 180%;
+  padding-left: 25%;
+  color: #0b1f2c;
 }
 
 .section-wrap {
   position:relative;
-  margin-left: 18%;
+  width: 100%;
+}
+
+.section-wrap-wrap {
+  position: relative;
+  background-color: #f2f7f7;
+  width: 100%;
+  height: 50em;
+  /*min-width: 30em;*/
 }
 
 .university {
-  position:absolute;
-  font-size: 1.2em;
-  margin-left: 8em;
-  margin-top: 1em;
+  position:relative;
+  padding-left: 25%;
+  padding-top: 1em;
+  color: #0b1f2c;
+  font-size: 115%;
 }
 
 .logo {
   position: absolute;
-  width:6em;
-  height:6em;
-  margin-left: 1em;
-  margin-top: 1em;
+  padding-left: 25%;
+  margin-left: -8em;
+  margin-top: -3.5em;
+}
+
+.logo img {
+  width: 6em;
+  height: auto;
+}
+
+.mclaren-logo {
+  position: absolute;
+  width: 9%;
+  height: auto;
+  margin-left: 0%;
+  margin-top: 0.5em;
+  min-width: 6% !important;
 }
 
 .degree {
-  position: absolute;
-  font-size: 1em;
-  margin-left: 9.5em;
-  margin-top: 3em;
+  position: relative;
+  font-size: 90%;
+  padding-left: 25%;
+  padding-top: 1em;
 }
 
 .date {
-  position: absolute;
-  font-size: 0.8em;
-  margin-left: 12em;
-  margin-top: 7em;
+  position: relative;
+  font-size: 70%;
+  padding-left: 25%;
+  padding-top: 2em;
 }
 
-.chart rect {
-    position:relative;
-    fill: #0093E1;
-    left: 20%;
-    margin-top: -1.5em;
-  }
+@media screen and (max-width:55em) {
+    .coding {
+      display: none;
+    }
 
-  .chart text {
-    font-family: 'Montserrat', sans-serif;
-    fill: white;
-    font: 10px sans-serif;
-    text-anchor: end;
-    left: 20.5em;
+    .grad {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 35em) {
+  .logo {
+    margin-left: -6em;
   }
+  .logo img {
+    width: 5em;
+  }
+}
+
+.coding {
+  max-width: 30em !important;
+  position:absolute;
+  margin-left: 75%;
+  margin-top: 25em;
+  z-index:2;
+  width: 15%;
+  height: auto;
+  font-size:0.5em;
+  transform:          rotate(-30deg);
+  -ms-transform:      rotate(-30deg);
+  -moz-transform:     rotate(-30deg);
+  -webkit-transform:  rotate(-30deg);
+  -o-transform:       rotate(-30deg);
+}
+
+.grad {
+  max-width: 15em !important;
+  position:absolute;
+  margin-left: 75%;
+  margin-top: 14em;
+  z-index:2;
+  width:15%;
+  height: auto;
+  transform:          rotate(25deg);
+  -ms-transform:      rotate(25deg);
+  -moz-transform:     rotate(25deg);
+  -webkit-transform:  rotate(25deg);
+  -o-transform:       rotate(25deg);
+}

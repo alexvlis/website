@@ -5,52 +5,166 @@
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/projects.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-
-        <a class="navbar-brand visible-xs" href="#">Alex Vlissidis</a>
-
-        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="border: #0b1f2c; width: 100%;">
+    <div class="container" style="border: #0b1f2c;">
+      <div class="navbar-header" style="background-color: #0b1f2c; border: #0b1f2c;">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="../images/icon-menu.svg" style="width: 2em; height: 2em;"/>
         </button>
-
       </div>
-
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/bio">Bio</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/publications">Publications</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/bio">Bio</a></li>
+          <li class="nav-item"><a href="/projects">Projects</a></li>
+          <li class="nav-item"><a href="/publications">Publications</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/"><i class="fa fa-linkedin"></i></a></li>
-          <li class="navbar-icon"><a href="https://github.com/alexvlis/"><i class="fa fa-github"></i></a></li>
-          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064"><i class="fa fa-stack-overflow"></i></a></li>
-          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/"><i class="fa fa-instagram"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/alexvlis/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="navbar-icon"><a href="https://github.com/alexvlis/" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="navbar-icon"><a href="https://stackoverflow.com/users/story/8503064" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.instagram.com/alexvlissidis/" target="_blank"><i class="fa fa-instagram"></i></a></li>
           <li class="navbar-icon"><a href="mailto:alex.vlissidis@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-  <div class="intro">Projects</div>
+  <div class="intro-wrap">
+    <div class="intro">Projects</div>
+  </div>
 
-  <hr style="margin-top: 18em;">
+  <div class="project-wrap" style="padding-bottom: 22em;">
+    <div class="title">Deep Learning Methods for Lip Reading</div>
+    <div class="summary">
+      Deep neural networks have made great strides in computer vision tasks,
+but have not yet achieved the same for performing lipreading
+from videos. We investigate the performance of three competing
+network architectures and
+find that although each network can achieve relatively strong
+performance, a pretrained image classification network with
+recurrent units achieves the highest accuracy and is most tolerant
+to various hyperparameters, achieving an 82% accuracy on the
+GRID dataset.
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div class="column">
+          <img src="../images/lip-reading-saliency.png">
+          <img src="../images/lip-reading-class_vis_set.png">
+          <img src="../images/lip-reading-model.png">
+        </div>
+      </div>
+    </div>
+    <div class="github">
+        <a href="https://github.com/danisbet/machine-lip-reading" target="_blank">
+          <img src="../images/github.png">
+        </a>
+      </div>
+      <div class="pdf">
+      <a href="../lip-reading.pdf" target="_blank">
+        <img src="../images/pdf.png">
+     </a>
+    </div>
+  </div>
 
+  <div class="project-wrap" style="background-color: #f2f7f7; padding-bottom: 24em;">
+    <div class="title">Image Captioning & Style Transfer</div>
+    <div class="summary">
+      Image captioning with vanilla RNNs and LSTMs on the COCO dataset. Network visualizations and style transfer on SqueezeNet, which is a deep CNN pretrained to perform image classification on ImageNet.
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div class="column">
+          <img src="../images/saliency-maps.png" >
+          <img src="../images/fooling.png">
+          <img src="../images/style-transfer.png">
+        </div>
+      </div>
+    </div>
 
-  <div class="footer" style="top:90%">
-    <h1 align="center"><font size=1>&copy; Alexandros Vlissidis - All rights reserved</font></h1>
+    <div class="github" style="padding-top: 20em; margin-left: -13.5em;">
+      <a href="https://github.com/alexvlis/image-captioning-style-transfer" target="_blank">
+        <img src="../images/github.png">
+      </a>
+    </div>
+  </div>
+
+  <div class="project-wrap" style="padding-bottom: 30em;">
+    <div class="title">Extractive Document Summarization using CNNs</div>
+    <div class="summary">
+Extractive Summarization is a method, which aims to automatically generate summaries of documents through the extraction of sentences in the text. The specific model we implemented is a regression process for sentence ranking on the DUC Dataset. The architecture of this method consists of a convolution layer followed by a max-pooling layer, on top of a pre-trained word2vec mapping. We implemented this new proposed method and perform experiments on single-document extractive summarization.
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div class="column">
+          <img src="../images/fullpipeline.png">
+        </div>
+      </div>
+    </div>
+     <div class="github" style="padding-top: 26em;">
+      <a href="https://github.com/alexvlis/extractive-document-summarization" target="_blank">
+        <img src="../images/github.png">
+      </a>
+    </div>
+
+    <div class="pdf" style="padding-top: 26em;">
+      <a href="../summarization.pdf" target="_blank">
+        <img src="../images/pdf.png">
+     </a>
+    </div>
+  </div>
+
+  <div class="project-wrap" style="background-color: #f2f7f7; padding-bottom: 23em;">
+    <div class="title">Natural Machine Translation With Attention</div>
+    <div class="summary">
+      This project implements Neural Machine Translation with Attention to translate Vietnamese sentences to English. It explores an LSTM seq2seq model with no attention, Dot Product Attention, Bilinear Attention and Feedforward Attention. Achieved a BLEU score of 20 after 10,000 epochs on the IWSLT'15 English-Vietnamese dataset.
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div class="column">
+          <img src="../images/encdec.jpg" >
+          <img src="../images/attention_mechanism.jpg">
+        </div>
+      </div>
+    </div>
+      <div class="github" style="padding-top: 19em;  margin-left: -13.5em;">
+      <a href="https://github.com/alexvlis/nmt-with-attention" target="_blank">
+        <img src="../images/github.png">
+      </a>
+    </div>
+  </div>
+
+  <div class="project-wrap" style="padding-bottom: 28em;">
+    <div class="title">Image Classifier</div>
+    <div class="summary">
+      This project investigates CNN performance on the CIFAR-10 dataset. Aspects of this project include experimenting with different optimization algorithms, such as SGD, SGD with momentum, RMSProp and Adam. In addition, various forms of batch normalization and dropout are explored in order to assess their effectiveness in different scenarios, leading to an accuracy of 80%. All techniques used in this project were designed and implemented as an exercise to acquire a fundamental understanding of algorithms which power numerous products worldwide.
+    </div>
+    <div class="grid" style="margin-left: -21em;">
+      <div class="row">
+        <div class="column">
+          <img src="../images/image-filter.png">
+          <img src="../images/cnn-filters.png">
+        </div>
+      </div>
+    </div>
+    <div class="github" style="padding-top: 32em;  margin-left: -13.5em;">
+      <a href="https://github.com/alexvlis/image-classification" target="_blank">
+        <img src="../images/github.png">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-wrap">
+    <div class="footer">
+      &copy; Alex Vlissidis - All rights reserved
+    </div>
   </div>
 </body>

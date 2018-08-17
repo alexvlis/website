@@ -1,47 +1,245 @@
+h1, h2, h3, h4, h5, h6{
+  line-height: 40px;
+}
+
+@font-face{font-family:sinkinsans300;src:url(../fonts/sinkinsans-300.eot);src:url(../fonts/sinkinsans-300.eot?#iefix) format("embedded-opentype"),url(../fonts/sinkinsans-300.woff) format("woff"),url(../fonts/sinkinsans-300.ttf) format("truetype"),url(../fonts/sinkinsans-300.svg#sinkin_sans300_light) format("svg");font-weight:400;font-style:normal}
+
 html, body {
-  font-family: 'Montserrat', sans-serif;
-  color: #404040;
+  font-family: sinkinsans300;
+  color: #666;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-.footer {
-  position: absolute;
-  top: 120em;
-  background-attachment: scroll;
-  bottom: 0;
-  width:100%;
-}
-
-.intro {
-  position:absolute;
-  left:18%;
-  top: 2em;
-  font-size: 5em;
-}
-
 .navbar {
-  background-color: #3D3D3D;
+  background: #fff;
+  width: 100%;
+}
+
+.nav-item a:hover {
+  color: #0065ff !important;
 }
 
 .nav.navbar-nav.navbar-right li a {
-  color: #E8E8E8;
+  color: #0b1f2c;
+  margin-right: 0%;
 }
 
 .nav.navbar-nav li a {
-  color: #E8E8E8;
+  color: #0b1f2c;
+}
+
+.nav.navbar-nav.navbar-right li {
+  display: inline-block;
+  text-align: left;
 }
 
 .nav-brand a {
-  color: #E8E8E8;
+  color: #0b1f2c;
 }
 
-hr {
-    display: block;
-    margin-bottom: 0.5em;
-    margin-left: 18%;
-    margin-right: 18%;
-    border-style: inset;
-    border-width: 1px;
+.navbar-toggle {
+  padding-left: 1%;
+  position: relative;
+  background-color: #0b1f2c;
+  color: #fff;
+  border: #0b1f2c;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.navbar-toggle:hover {
+  background-color: #0b1f2c !important;
+  color: red;
+}
+
+.navbar-toggle:focus {
+  background-color: #0b1f2c !important;
+  color: red;
+}
+
+.intro-wrap {
+  position: absolute;
+  top: 3em;
+  height: 15em;
+  width: 100%;
+  background-color: #0b1f2c;
+}
+
+.intro {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 5em;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.footer-wrap {
+  position: relative;
+  width: 100%;
+  top: 30em;
+  height: 4em;
+  background-color: #0b1f2c;
+  /*min-width: 53em;*/
+  /*overflow: hidden;*/
+}
+
+.footer {
+  position: absolute;
+  width:100%;
+  color: #fff;
+  text-align: center;
+  font-size: 70%;
+  padding-top: 2em;
+  /*padding-bottom: 0;*/
+}
+
+.project-wrap {
+  position: relative;
+  top: 20em;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 20em;
+}
+
+.title {
+  position: relative;
+  color: #0b1f2c;
+  font-size: 160%;
+  padding-left: 40%;
+  text-align: left;
+  margin-left: -12.7em;
+}
+
+.summary {
+  position: absolute;
+  color: #666;
+  font-size: 90%;
+  /*display: inline-block;*/
+  padding-left: 40%;
+  padding-top: 2em;
+  width: 80%;
+  z-index: 5;
+  text-align: left;
+  line-height: 2.2;
+}
+
+.grid {
+  /*display: inline-block;*/
+  position: absolute;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-left: 40%;
+  margin-left: -20em;
+  text-align: left;
+}
+
+.row {
+  /*display: inline-block;*/
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  /*padding-left: 15%;*/
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-left: 0;
+}
+
+.column img {
+  margin-top: 8px;
+  width: 17em;
+  height: auto;
+}
+
+.title a {
+  color: #0b1f2c;
+}
+
+.github {
+  position: absolute;
+  padding-top: 18em;
+  padding-left: 40%;
+  margin-left: -15em;
+  z-index: 5;
+}
+
+.github img {
+  position: absolute;
+  width: 2em;
+  z-index: 17;
+}
+
+.pdf {
+  position: absolute;
+  padding-top: 18em;
+  padding-left: 40%;
+  margin-left: -11em;
+  z-index: 5;
+}
+
+.pdf img {
+  position: absolute;
+  width: 1.5em;
+  z-index: 5;
+}
+
+
+@media screen and (max-width: 60em) {
+  .summary {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 50em) {
+  .project-wrap {
+    text-align: center;
+  }
+
+  .github {
+    margin-top: 0em !important;
+    margin-left: 1em !important;
+  }
+
+  .pdf {
+    margin-top: 0em;
+    margin-left: 5em;
+  }
+
+  .grid {
+    padding-top: 2em;
+    width: 100%;
+    margin-left: -4em !important;
+    padding-left: 1em;
+  }
+
+  .column {
+    text-align: center;
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .summary {
+    position: relative;
+    width: 90%;
+    padding-left: 10%;
+    /*text-align: center;*/
+  }
+
+  .title {
+    margin-left: 0%;
+    padding-left: 10%;
+    /*text-align: center;*/
+  }
 }
